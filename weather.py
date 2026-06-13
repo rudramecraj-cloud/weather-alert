@@ -36,7 +36,7 @@ if alert:
 
     msg = EmailMessage()
 
-    msg["Subject"] = "⚠ Weather Alert"data = response.json()
+    msg["Subject"] = "⚠ Weather Alert"
     msg["From"] = os.getenv("EMAIL_ADDRESS")
     msg["To"] = os.getenv("EMAIL_ADDRESS")
 
