@@ -14,6 +14,9 @@ URL = (
 
 response = requests.get(URL)
 data = response.json()
+print("API KEY EXISTS:", API_KEY is not None)
+print("STATUS CODE:", response.status_code)
+print(data)
 
 alert = False
 reason = []
